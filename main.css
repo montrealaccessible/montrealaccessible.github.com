@@ -1,5 +1,9 @@
 a {
 	text-decoration: none;
+	color: #1777ba;
+}
+a:hover {
+    color: #1777ba;
 }
 h2.business_name {
 	margin_top: 0;
@@ -32,6 +36,9 @@ div#header {
 }
 #header .nav a {
 	color: #65b0e4;
+}
+#header .nav a.green {
+    color: #62e596;
 }
 a:hover {
 	text-decoration: underline;

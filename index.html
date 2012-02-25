@@ -10,15 +10,19 @@
 <body>
 <div id="header">
 	<h1>Montréal &nbsp;accessible</h1>
-	<p class="nav"><a href="https://docs.google.com/spreadsheet/viewform?formkey=dEo2S3gzMXR1bEF2Y1ZtdU1Ba25hZlE6MQ">Contribuez des données</a> &nbsp;&middot;&nbsp; <a href="about.html">À propos</a></p>
+	<p class="nav"><a href="https://docs.google.com/spreadsheet/viewform?formkey=dEo2S3gzMXR1bEF2Y1ZtdU1Ba25hZlE6MQ" class="green">Ajoutez une commerce</a> &nbsp;&middot;&nbsp; <a href="about.html">À propos</a></p>
 </div>
 <div id="map_container">
-	<iframe scrolling="no"  src="https://www.google.com/fusiontables/embedviz?viz=MAP&q=select+col4+from+3046489+&h=false&lat=45.53352937473898&lng=-73.57612609863281&z=13&t=1&l=col4"></iframe>
+	<iframe scrolling="no"  src="https://www.google.com/fusiontables/embedviz?viz=MAP&q=select+col4+from+3046489+&h=false&lat=45.53352937473898&lng=-73.57612609863281&z=14&t=1&l=col4"></iframe>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 $(function() {
-	$('iframe').height($(window).height() - 52);
+	function redraw() {
+		$('iframe').height($(window).height() - 52);
+	}
+	redraw();
+	$(window).resize(redraw);
 });
 </script>
 </body>
